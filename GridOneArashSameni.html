@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
+    <title>گرید 1</title>
+    <style>
+        body {
+            font-family: Aclonica;
+            background-color: darkgray;
+        }
+    </style>
+</head>
+                        <!-- آرش سامنی (تمرین گرید 1) -->
+<body dir="rtl">
+    <form action="#" method="get" target="" autocomplete="on" enctype="application/x-www-form-urlencoded">
+        <!-- اطلاعات مربوط به مشخصات فرد -->
+        <fieldset>
+            <legend>مشخصات</legend>
+            <dl>
+                <dt> <label for="mobile">شماره همراه *</label> </dt>
+                <dd><input type="tel" id="mobile" name="cmobile" maxlength="11" placeholder="09*********" required>
+                </dd>
+
+                <dt> <label for="name">نام</label> </dt>
+                <dd> <input id="name" name="cname" placeholder="آرش"> </dd>
+
+                <dt> <label for="lname">نام خانوادگی*</label><br></dt>
+                <dd> <input id="lname" name="clname" maxlength="50" placeholder="سامنی" required></input></dd>
+                <br>
+
+                <dt> <label for="birthday">تاریخ تولد</label> </dt>
+                <dd><input type="date" id="birthday" name="cbirthday"></input></dd> <br>
+            </dl>
+        </fieldset>
+
+        <!-- اطلاعات دسترسی و تماس مشتری -->
+        <fieldset>
+            <legend>اطلاعات تماس</legend>
+
+            <label for="github"> ایمیل ( اکانت گیت هاب)*</label>
+            <input type="email" id="github" name="GHub" placeholder="a@b.c" required></input><br>
+            <label for="city">شهر*</label>
+            <input id="city" list="lstcity1" name="city" placeholder="انتخاب کنید" required>
+            <datalist id="lstcity1">
+                <option value="tehran">تهران</option>
+                <option value="shiraz">شیراز</option>
+                <option value="esfehan">اصفهان</option><br>
+            </datalist>
+            <label for="address"> آدرس </label>
+            <input type="email" id="address" name="caddress" placeholder="محله - خیابان - کوچه پلاک - واحد"
+                size="40"></input>
+        </fieldset>
+
+        <fieldset>
+            <legend>مهارت ها</legend>
+
+            <label>میزان تسلط بر HTML</label>
+            <span>کم</span><input type="radio" name="cskill" value="kam">
+            <span>متوسط</span><input type="radio" name="cskill" value="motevaset">
+            <span>زیاد</span><input type="radio" name="cskill" value="ziad"><br>
+            <label for="css">میزان تسلط بر CSS</label>
+            <select id="css" name="cskillcss">
+                <option value="kam">کم</option>
+                <option value="kam">متوسط</option>
+                <option value="kam">زیاد</option>
+            </select><br>
+            <label for="responsive">میزان تسلط بر Responccive</label>
+            <input type="range" id="responsive" name="cskillresponsive" min="0" max="100"><br>
+            <label>میزان تسلط بر Bootstrap</label>
+            <span>کم</span><input type="radio" name="cskillboot" value="kam">
+            <span>متوسط</span><input type="radio" name="cskillboot" value="motevaset">
+            <span>زیاد</span><input type="radio" name="cskillboot" value="ziad"><br>
+            <label for="gith">میزان تسلط بر Github</label>
+            <select id="gith" name="cskillgit">
+                <option value="kam">کم</option>
+                <option value="kam">متوسط</option>
+                <option value="kam">زیاد</option>
+            </select><br>
+            <label for="javas">میزان آشنایی با JavaScript</label>
+            <input type="range" id="javas" name="cskilljavas" min="0" max="100"><br>
+            <label for="otkerskill"> سایر توانایی ها</label>
+            <textarea id="otherskill" name="ctherskill" rows="5" cols="17" wrap="hard"></textarea>
+        </fieldset>
+
+        <!-- سربرگ فرم  -->
+        <fieldset>
+            <legend>نام برای سربرگ</legend>
+
+            <label for="namesarbarg">نام</label>
+            <input id="namesarbarg" name="cname1" placeholder="آرش">
+        </fieldset>
+
+        <input type="submit" name="submit" id="submit" value="ثبت فرم" autofocus>
+
+    </form>
+</body>
+
+</html>
