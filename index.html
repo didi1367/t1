@@ -8,23 +8,33 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
     <title>گرید 1</title>
     <style>
+        * {
+            margin-bottom: 1vh;
+        }
+
         body {
             font-family: Aclonica;
             background-color: darkgray;
         }
+
+        textarea {
+            vertical-align: top;
+            resize: none;
+        }
     </style>
 </head>
-                        <!-- آرش سامنی (تمرین گرید 1) -->
+<!-- آرش سامنی (تمرین گرید 1) -->
+
 <body dir="rtl">
     <form action="#" method="get" target="" autocomplete="on" enctype="application/x-www-form-urlencoded">
         <!-- اطلاعات مربوط به مشخصات فرد -->
         <fieldset>
-            <legend>:مشخصات</legend>
+            <legend>مشخصات:</legend>
 
             <dl>
                 <p>سلام</p>
                 <dt> <label for="mobile">شماره همراه *</label> </dt>
-                <dd><input type="tel" id="mobile" name="cmobile" maxlength="11" placeholder="09*********" required>
+                <dd><input type="tel" id="mobile" name="cmobile" maxlength="11" placeholder="09*********" pattern="[0-9]{11}" title="شماره 11 رقمی تلفن(فقط عدد)" required>
                 </dd>
 
                 <dt> <label for="name">نام</label> </dt>
@@ -32,7 +42,6 @@
 
                 <dt> <label for="lname">نام خانوادگی*</label><br></dt>
                 <dd> <input id="lname" name="clname" maxlength="50" placeholder="سامنی" required></input></dd>
-                <br>
 
                 <dt> <label for="birthday">تاریخ تولد</label> </dt>
                 <dd><input type="date" id="birthday" name="cbirthday"></input></dd> <br>
@@ -85,7 +94,7 @@
             <label for="javas">میزان آشنایی با JavaScript</label>
             <input type="range" id="javas" name="cskilljavas" min="0" max="100"><br>
             <label for="otkerskill"> سایر توانایی ها</label>
-            <textarea id="otherskill" name="ctherskill" rows="5" cols="17" wrap="hard"></textarea>
+            <textarea id="otherskill" name="ctherskill" rows="7" cols="30" wrap="hard"></textarea>
         </fieldset>
 
         <!-- سربرگ فرم  -->
@@ -96,7 +105,7 @@
             <input id="namesarbarg" name="cname1" placeholder="آرش">
         </fieldset>
 
-        <input type="submit" name="submit" id="submit" value="ثبت فرم" autofocus>
+        <input type="submit" name="submit" id="submit" value="ثبت فرم">
 
     </form>
 </body>
