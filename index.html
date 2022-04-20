@@ -9,7 +9,11 @@
     <title>گرید 1</title>
     <style>
         * {
-            margin-bottom: 1vh;
+            margin-bottom: 3vh;
+        }
+
+        dl.kutah{
+            line-height: 0;
         }
 
         body {
@@ -31,8 +35,7 @@
         <fieldset>
             <legend>مشخصات:</legend>
 
-            <dl>
-                <p>سلام</p>
+            <dl class="kutah">  
                 <dt> <label for="mobile">شماره همراه *</label> </dt>
                 <dd><input type="tel" id="mobile" name="cmobile" maxlength="11" placeholder="09*********" pattern="[0-9]{11}" title="شماره 11 رقمی تلفن(فقط عدد)" required>
                 </dd>
@@ -40,11 +43,11 @@
                 <dt> <label for="name">نام</label> </dt>
                 <dd> <input id="name" name="cname" placeholder="آرش"> </dd>
 
-                <dt> <label for="lname">نام خانوادگی*</label><br></dt>
+                <dt> <label for="lname">نام خانوادگی*</label></dt>
                 <dd> <input id="lname" name="clname" maxlength="50" placeholder="سامنی" required></input></dd>
 
                 <dt> <label for="birthday">تاریخ تولد</label> </dt>
-                <dd><input type="date" id="birthday" name="cbirthday"></input></dd> <br>
+                <dd><input type="date" id="birthday" name="cbirthday"></input></dd>
             </dl>
         </fieldset>
 
